@@ -18,7 +18,7 @@ class SlackHandler(logging.Handler):  # Inherit from logging.Handler
         payload = {
             'channel': self.channel,
             'username': self.name,
-            'text': record.message
+            'text': self.format(record)
         }
         r = requests.post(
             self._url,
