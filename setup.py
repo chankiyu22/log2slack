@@ -6,7 +6,7 @@ README = path.abspath(path.join(path.dirname(__file__), 'README.md'))
 
 setup(
       name='log2slack',
-      version='0.2',
+      version='0.3',
       packages=['log2slack'],
       description='Simple logger for posting log to slack.com',
       long_description=open(README).read(),
